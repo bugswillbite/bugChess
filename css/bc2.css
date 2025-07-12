@@ -1,0 +1,579 @@
+.safety
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-wrapper input
+{
+  display: none;
+}
+.text-wrapper .hamburger 
+{
+    background-color: silver;
+    width: 26px; height: 26px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transform: translateX(4px);
+    position: relative;
+    z-index: 5;
+}
+.text-wrapper .hamburger .rotate-wrapper
+{
+    background-color: rgb(164, 203, 206);
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+input:checked + .hamburger .rotate-wrapper
+{
+    transform: rotate(135deg);
+}
+input:checked:hover + .hamburger .rotate-wrapper
+{
+    transform: rotate(225deg);
+}
+.hamburger label
+{
+    width: 26px; height: 26px;
+    position: absolute;
+    cursor: pointer;
+    left: -1px;
+}
+.hamburger .line,
+.hamburger .line::before,
+.hamburger .line::after
+{
+    background-color: rgb(9, 24, 70);
+    height: 1.5px;
+    width: 100%;
+}
+.hamburger .line
+{
+    position: relative;
+}
+.hamburger .line::before,
+.hamburger .line::after
+{
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+.hamburger .line::before { top: -5px; }
+.hamburger .line::after { bottom: -5px; }
+
+input:checked + .hamburger .line::before,
+input:checked + .hamburger .line::after
+{
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+}
+input:checked + .hamburger .line::after
+{
+    opacity: 0;
+}
+
+.text-wrapper .hammy
+{
+    background-color: silver;
+    width: 26px; height: 26px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transform: translateX(4px);
+    position: relative;
+    z-index: 5;
+}
+.text-wrapper .hammy .rotate-wrapper2
+{
+    background-color: rgb(164, 203, 206);
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+input:checked + .hammy .rotate-wrapper2
+{
+    transform: rotate(135deg);
+}
+input:checked:hover + .hammy .rotate-wrapper2
+{
+    transform: rotate(225deg);
+}
+.hammy label
+{
+    width: 26px; height: 26px;
+    position: absolute;
+    cursor: pointer;
+    left: -1px;
+}
+.hammy .line2,
+.hammy .line2::before,
+.hammy .line2::after
+{
+    background-color: rgb(9, 24, 70);
+    height: 1.5px;
+    width: 100%;
+}
+.hammy .line2
+{
+    position: relative;
+}
+.hammy .line2::before,
+.hammy .line2::after
+{
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+.hammy .line2::before { top: -5px; }
+.hammy .line2::after { bottom: -5px; }
+
+input:checked + .hammy .line2::before,
+input:checked + .hammy .line2::after
+{
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+}
+
+input:checked + .line2::after
+{
+    opacity: 0;
+}
+.img-wrap2
+{
+    display: none;
+}
+#hammy:checked ~ .hammy ~ .img-wrap2
+{
+    display: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+
+.text-wrapper .anty
+{
+    background-color: silver;
+    width: 26px; height: 26px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transform: translateX(4px);
+    position: relative;
+    z-index: 5;
+}
+.text-wrapper .anty .rotate-wrapper3
+{
+    background-color: rgb(164, 203, 206);
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+input:checked + .anty .rotate-wrapper3
+{
+    transform: rotate(135deg);
+}
+input:checked:hover + .anty .rotate-wrapper3
+{
+    transform: rotate(225deg);
+}
+.anty label
+{
+    width: 26px; height: 26px;
+    position: absolute;
+    cursor: pointer;
+    left: -1px;
+}
+.anty .line3,
+.anty .line3::before,
+.anty .line3::after
+{
+    background-color: rgb(9, 24, 70);
+    height: 1.5px;
+    width: 100%;
+}
+.anty .line3
+{
+    position: relative;
+}
+.anty .line3::before,
+.anty .line3::after
+{
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+.anty .line3::before { top: -5px; }
+.anty .line3::after { bottom: -5px; }
+
+input:checked + .anty .line3::before,
+input:checked + .anty .line3::after
+{
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+}
+
+input:checked + .line3::after
+{
+    opacity: 0;
+}
+.img-wrap3
+{
+    display: none;
+}
+#anty:checked ~ .anty ~ .img-wrap3
+{
+    display: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+
+.text-wrapper .lady
+{
+    background-color: silver;
+    width: 26px; height: 26px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transform: translateX(4px);
+    position: relative;
+    z-index: 5;
+}
+.text-wrapper .lady .rotate-wrapper3
+{
+    background-color: rgb(164, 203, 206);
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+input:checked + .lady .rotate-wrapper3
+{
+    transform: rotate(135deg);
+}
+input:checked:hover + .lady .rotate-wrapper3
+{
+    transform: rotate(225deg);
+}
+.lady label
+{
+    width: 26px; height: 26px;
+    position: absolute;
+    cursor: pointer;
+    left: -1px;
+}
+.lady .line3,
+.lady .line3::before,
+.lady .line3::after
+{
+    background-color: rgb(9, 24, 70);
+    height: 1.5px;
+    width: 100%;
+}
+.lady .line3
+{
+    position: relative;
+}
+.lady .line3::before,
+.lady .line3::after
+{
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+.lady .line3::before { top: -5px; }
+.lady .line3::after { bottom: -5px; }
+
+input:checked + .lady .line3::before,
+input:checked + .lady .line3::after
+{
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+}
+
+input:checked + .line3::after
+{
+    opacity: 0;
+}
+.img-wrap3
+{
+    display: none;
+}
+#lady:checked ~ .lady ~ .img-wrap3
+{
+    display: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+
+.text-wrapper .ant
+{
+    background-color: silver;
+    width: 26px; height: 26px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transform: translateX(4px);
+    position: relative;
+    z-index: 5;
+}
+.text-wrapper .ant .rotate-wrapper3
+{
+    background-color: rgb(164, 203, 206);
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+input:checked + .ant .rotate-wrapper3
+{
+    transform: rotate(135deg);
+}
+input:checked:hover + .ant .rotate-wrapper3
+{
+    transform: rotate(225deg);
+}
+.ant label
+{
+    width: 26px; height: 26px;
+    position: absolute;
+    cursor: pointer;
+    left: -1px;
+}
+.ant .line3,
+.ant .line3::before,
+.ant .line3::after
+{
+    background-color: rgb(9, 24, 70);
+    height: 1.5px;
+    width: 100%;
+}
+.ant .line3
+{
+    position: relative;
+}
+.ant .line3::before,
+.ant .line3::after
+{
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+.ant .line3::before { top: -5px; }
+.ant .line3::after { bottom: -5px; }
+
+input:checked + .ant .line3::before,
+input:checked + .ant .line3::after
+{
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+}
+
+input:checked + .line3::after
+{
+    opacity: 0;
+}
+.img-wrap3
+{
+    display: none;
+}
+#ant:checked ~ .ant ~ .img-wrap3
+{
+    display: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.text-wrapper .scene
+{
+    background-color: silver;
+    width: 26px; height: 26px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transform: translateX(4px);
+    position: relative;
+    z-index: 5;
+}
+.text-wrapper .scene .rotate-wrapper3
+{
+    background-color: rgb(164, 203, 206);
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+input:checked + .scene .rotate-wrapper3
+{
+    transform: rotate(135deg);
+}
+input:checked:hover + .scene .rotate-wrapper3
+{
+    transform: rotate(225deg);
+}
+.scene label
+{
+    width: 26px; height: 26px;
+    position: absolute;
+    cursor: pointer;
+    left: -1px;
+}
+.scene .line3,
+.scene .line3::before,
+.scene .line3::after
+{
+    background-color: rgb(9, 24, 70);
+    height: 1.5px;
+    width: 100%;
+}
+.scene .line3
+{
+    position: relative;
+}
+.scene .line3::before,
+.scene .line3::after
+{
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+.scene .line3::before { top: -5px; }
+.scene .line3::after { bottom: -5px; }
+
+input:checked + .scene .line3::before,
+input:checked + .scene .line3::after
+{
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+}
+
+input:checked + .line3::after
+{
+    opacity: 0;
+}
+.img-wrap3
+{
+    display: none;
+}
+#scene:checked ~ .scene ~ .img-wrap3
+{
+    display: inherit;
+    transition: 0.5s ease-in-out;
+}
+div.text-wrapper
+{
+    position: relative;
+    background-color: blanchedalmond;
+    margin-top: 107px;
+    padding: 30px;
+    padding-right: 30px;
+    padding-right: 31px;
+    left: -80px;
+    padding-right: 31px;
+}
+
+.text-wrapper section
+{
+    position: relative;
+    padding: 0px;
+}
+
+.text-wrapper .old
+{
+    background-color: silver;
+    width: 26px; height: 26px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transform: translateX(4px);
+    position: relative;
+    z-index: 5;
+}
+.text-wrapper .old .rotate-wrapper3
+{
+    background-color: rgb(164, 203, 206);
+    width: 18px;
+    height: 18px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+input:checked + .old .rotate-wrapper3
+{
+    transform: rotate(135deg);
+}
+input:checked:hover + .old .rotate-wrapper3
+{
+    transform: rotate(225deg);
+}
+.old label
+{
+    width: 26px; height: 26px;
+    position: absolute;
+    cursor: pointer;
+    left: -1px;
+}
+.old .line3,
+.old .line3::before,
+.old .line3::after
+{
+    background-color: rgb(9, 24, 70);
+    height: 1.5px;
+    width: 100%;
+}
+.old .line3
+{
+    position: relative;
+}
+.old .line3::before,
+.old .line3::after
+{
+    content: "";
+    position: absolute;
+    transition: 0.35s ease-in-out;
+}
+.old .line3::before { top: -5px; }
+.old .line3::after { bottom: -5px; }
+
+input:checked + .old .line3::before,
+input:checked + .old .line3::after
+{
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+}
+
+input:checked + .line3::after
+{
+    opacity: 0;
+}
+.img-wrap3
+{
+    display: none;
+}
+#old:checked ~ .old ~ .img-wrap3
+{
+    display: inherit;
+    transition: 0.5s ease-in-out;
+}

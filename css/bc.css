@@ -1,0 +1,347 @@
+:root
+{    
+    -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+}
+
+* { box-sizing: border-box;}
+body
+{
+    background-color: rgb(117, 141, 133);
+    font: 350 15px/1.5, sans-serif;
+    letter-spacing: 0.2px;
+    margin: 0;
+    background: url(../imgs/4LEAF.jpg);
+}
+/* PAGE WRAPPER */
+.pge-wrapper
+{
+    background-color: rgb(133, 150, 189);
+    display: flow-root;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* MARGIN */
+.margin
+{
+    position: absolute;
+    top: -24px;
+    left: 591px;
+    width: 888px;
+    height: auto;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+/* LINKS */
+.margin li
+{
+    position: relative;
+    flex: 0 1 auto;
+}
+ul 
+{
+    left: 0;
+    position: relative;
+    list-style-type: none;
+    padding: 0
+}
+li 
+{
+    float: left;
+    z-index: 5000;
+}
+li a 
+{
+    display: block;
+    color: rgb(20, 154, 152);
+    text-shadow: 1px 1px 1px #000000;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover 
+{
+    text-shadow: 1px 1px 1px #000000;
+    color: #acbbf9;
+}
+li a.this
+{
+    color:rgb(20, 129, 127)
+}
+/* STATIC IMG: WASP */
+.wasp
+{
+    position: absolute;
+    width: 215px;
+    margin-left: -216px;
+    margin-top: 138px;
+}
+@media (max-width: 600px)
+{
+    .wasp
+    {
+        position: absolute;
+        width: 110px;
+        margin-left: -100px;
+        margin-top: 25px
+    }
+}
+/* HEADER */
+header
+{
+    background-color: rgb(117, 141, 133);
+    position: fixed;
+    top: 0; left: 0; 
+    width: 100%;
+    height: 91px;
+    z-index: 10;
+    background: url(../imgs/4LEAF.jpg);
+
+}
+@media (max-width: 575.98px)
+{
+    header
+    {
+        height: 60px;
+    }
+}
+@media (min-width: 576px)
+{
+    header
+    {
+        height: 60px;
+    }
+}
+header .inn-wrapper
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div.bugs-wrapper
+{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex: 0 1 auto;
+}
+/* TITLE */
+h1
+{
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-family: Impact, sans-serif;
+    font-size: 77px;
+    margin-top: 35px;
+}
+h1.buggie
+{
+    position: absolute;
+    margin-top: -39px;
+    margin-left: 5px;
+    color: lightpink;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 575.98px)
+{
+    h1
+    { 
+        font-size: 40px; 
+        margin-top: -15px; 
+    }
+    h1.buggie 
+    { 
+        margin-top: -18px;
+        margin-left: 2px; 
+    }
+}
+@media (min-width: 576px)
+{
+   h1
+    { 
+        font-size: 43px; 
+        margin-top: -9px; 
+    }
+    h1.buggie 
+    { 
+        margin-top: -11px;
+        margin-left: 3px; 
+    }
+}
+@media (min-width: 768px)
+{
+    h1
+    { 
+        font-size: 43px; 
+        margin-top: -9px; 
+    }
+    h1.buggie 
+    { 
+        margin-top: -11px;
+        margin-left: 3px; 
+    }
+}
+@media (min-width: 992px)
+{
+    h1
+    { 
+        font-size: 77px; 
+        margin-top: -35px; 
+    }
+    h1.buggie 
+    { 
+        margin-top: -39px;
+        margin-left: 5px; 
+        top: 17px;
+    }
+}
+/* MAIN PAGE CONTENT */
+/* WRAPPER */
+div.text-wrapper
+{
+    position: relative;
+    background-color: blanchedalmond;
+    margin-top: 107px;
+    padding: 30px;
+    left: 0;
+}
+/* ....(HOME) */
+div.text-wrapper p:first-child
+{
+    color: hotpink;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -5px;
+    letter-spacing: 1.25px;
+}
+/* ....(IMGS) */
+div.text-wrapper p.blue
+{
+    color: rgb(55, 0, 255);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -5px;
+    letter-spacing: 1.25px;
+}
+/* TITLE */
+.text-wrapper h2
+{
+    position: relative;
+    left: 38px;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: -59px;
+}
+.black
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    letter-spacing: .5px;
+}
+@media (max-width: 600px)
+{
+    div.text-wrapper p:first-child { font-size: 15px; }
+    .black {font-size: 21px;}
+}
+/* INNER WRAPPER 1 FOR PAGE CONTENT */
+.bug-wrapper
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* TEXT:P1 HOME */
+div.bug-wrapper p:first-child
+{
+    font-size: 18px;
+    /* background-color: #000000; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #14161e;
+    padding: 3px;
+    width: 60%;
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+/* CHESS BOARD IMG */
+div.board
+{
+    flex: 0 1 auto;
+    margin-top: -5px; margin-left: 0;
+    border: 8px solid rgb(117, 141, 133);
+    width: 39%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    background-color: #14161e;
+}
+div.bug-wrapper .board img
+{
+    width: 100%; 
+    display: block;
+    flex: 0 1 auto;
+    padding-bottom: 5px;
+}
+div.bug-wrapper .board button
+{
+    font-size: 15px;
+    position: relative;
+    display: block;
+    flex: 1 1 auto;
+    background-color: #acbbf9;
+    border-color: black;
+    border-radius: 80%;
+    left: 10px;
+}
+div.bug-wrapper .board h6
+{
+    color: white;
+    position: relative;
+    font-size: 10px;
+    padding-left: 60px;
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    left: 18px;
+    align-self: flex-end;
+}
+/* IMG CONTAINER */
+div.play
+{
+    font-size: 16px;
+    padding: 3px;
+    width: 60%;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -251px;
+    position: relative;
+    background-color: yellowgreen;
+    background: url(../imgs/bg01.png);
+    border: 8px solid rgb(117, 141, 133);
+}
+div.play img
+{
+    width: 247px;
+    opacity: 0;
+}

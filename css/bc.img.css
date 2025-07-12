@@ -1,0 +1,209 @@
+.pge-wrapper
+{
+    background-color: rgb(133, 150, 189);
+    display: flex;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div.text-wrapper p:first-child
+{
+    color: rgb(17, 21, 239);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -5px;
+    letter-spacing: 1.25px;
+}
+div.text-wrapper .bug-wrapper1 p
+{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/*
+=Image Gallery
+============================================= */
+.img-wrap1
+{
+    display: none;
+}
+#hamburger:checked ~ .hamburger ~ .img-wrap1
+{
+    display: inherit;
+    transition: 0.5s ease-in-out;
+}
+.img-gallery
+{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    margin-top: -76px;
+}
+.img-gallery2
+{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    margin-top: -76px;
+}
+/*
+=Image Wrapper
+============================================= */
+.img-wrapper
+{
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    flex: 0 0 25%;
+}
+.img-wrapper2
+{
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    flex: 0 0 33%;
+}
+/*
+=Images
+============================================= */
+div.text-wrapper img
+{
+    width: 100%;
+    height: 100%;
+    flex: 0 1 auto;
+    border: 8px solid rgb(117, 141, 133);
+    display: block;
+    box-shadow: 1px 1px 2px rbg(218, 218, 218);
+}
+
+/*
+=X-Small Screen < 576px
+============================================= */
+/* @media (min-width: 0) */
+@media (max-width: 575.98px)
+{
+    .pge-wrapper { padding: 0 100px 100px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 100px; } /* top-bottom left-rights */
+    .img-wrapper { flex: 0 0 50%}
+    .margin
+    {
+        top: 50px;
+        font-size: 15px; 
+        left: -55px;
+        background-color: rgb(133, 150, 189);
+        height: 53px;
+        padding-right: 110px;
+    }
+
+}
+/*
+=Small Screen ≥ 576px
+============================================= */
+@media (min-width: 576px)
+{
+    .pge-wrapper { padding: 0 20px 60px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 20px; } /* top-bottom left-rights */
+    .img-wrapper { flex: 0 0 33.3333%}
+    .margin
+    {
+        top: 56px;
+        font-size: 18px;
+        left: -2px;
+        background-color: rgb(133, 150, 189);
+        height: 57px;
+        padding-right: 191px;
+        width: 768px;
+    }
+}
+
+/*
+=Medium Screen ≥ 768px
+when screen reaches 768-991.8px apply these rules
+============================================= */
+@media (min-width: 768px)
+{
+    .pge-wrapper { padding: 0 60px 80px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 60px; } /* top-bottom left-rights */
+    /* .img-wrapper { flex: 0 0 25%} */
+    .margin 
+    { 
+        top: -2px;
+        font-size: 22px;
+        left: 9px;
+        background-color: transparent;
+        height: 57px;
+        padding-right: 191px;
+        width: 970px;   
+    }
+}
+/*
+=Large Screen ≥ 992px
+============================================= */
+@media (min-width: 992px)
+{
+    .pge-wrapper { padding: 0 100px 100px; padding-bottom: 20px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 100px; } /* top-bottom left-rights */
+    .img-wrapper { flex: 0 0 25%}
+}
+@media (min-width: 992px)
+{
+    .margin
+    { 
+        position: absolute;
+        top: -24px;
+        left: 591px;
+        width: 888px;
+        height: auto;
+        font-family: "WDXL Lubrifont TC", sans-serif;
+        font-size: 31px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        background-color: transparent;
+    }
+}
+
+/* ========================================== */
+
+.bug-wrapper1 
+{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(117, 141, 133);
+    height: 296px;
+    margin-bottom: 20px;
+    width: 1098px;
+    margin-left: 0;
+    flex: 0 1 auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 0;
+    padding: 5px;
+    scrollbar-width: none;
+}
+div.bug-wrapper1 figure
+{
+    display: flex;
+    flex: 0 0 auto;
+    margin: 0;
+    scroll-snap-align: start;
+}
+div.bug-wrapper1 figure img 
+{
+    flex: 0 1 25%;
+    width: 265px;
+    height: auto;
+    object-fit: cover;
+    border: none;
+    padding-left: 5px;
+}
+
+
+

@@ -1,0 +1,252 @@
+/* =========== 
+BODY 
+===========*/
+body
+{
+    width: 100%;
+    background-color: rgb(117, 141, 133);
+}
+/* =========== 
+MARGIN 
+===========*/
+.margin
+{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 804px;
+    width: 720px;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 30px;  
+}
+ul 
+{
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+li 
+{
+  float: left;
+}
+li a 
+{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #8ad05f;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover 
+{
+    text-shadow: 1px 1px 1px #000000;
+    color: #8ad05f;
+}
+/* =========== 
+MAIN PAGE 
+===========*/
+.MainPage
+{
+    background-color: rgb(150, 174, 166);
+    border: 10px solid rgb(0, 90, 128);
+    margin-left: 41px;
+    margin-top: 66px;
+    width: 1330px;
+}
+/* IMG - WASP */
+.MainPage img:first-of-type
+{
+    position: absolute;
+    width: 189px;
+    margin-left: -61px;
+    margin-top: -81px;    
+}
+/* "BUG CHESS" - black */
+.MainPage h1:first-of-type
+{
+    position: absolute;
+    font-family: Impact, sans-serif;
+    font-size: 77px;
+    margin-top: -59px;
+    margin-left: 149px;
+}
+/* "BUG CHESS" - pink */
+.MainPage h1:nth-of-type(2)
+{
+    position: absolute;
+    font-family: Impact, sans-serif;
+    font-size: 77px;
+    margin-top: -62px;
+    margin-left: 153px;
+    color: lightpink;
+}
+.MainPage div:first-of-type
+{
+    padding-top: 5px;
+}
+/* "...." */
+.MainPage div p:nth-of-type(1)  
+{
+    color: rgb(247, 0, 255);
+    font-size: 50px;
+    position: relative;
+    display: inline;
+    margin-left: 104px;
+}
+/* "chess, but with bugs" */
+.MainPage div p:nth-of-type(2)
+{
+    display: inline;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    position: relative;
+}
+/* "...." */
+.MainPage div p:nth-of-type(3)
+{
+    display: inline;
+    color: rgb(247, 0, 255);
+    font-size: 50px;
+    position: relative;
+} 
+/* =========== 
+CHESS BOARD DIV 
+===========*/
+/* CONTAINER */
+.MainPage div:nth-of-type(3)
+{
+    position: relative;
+    width: 411px;
+    height: 438px;
+    margin-left: 883px;
+    margin-top: -242px;
+    border: 4px solid rgb(0, 90, 128);
+}
+/* IMAGE - chess board */
+.MainPage div img:first-of-type
+{
+    width: 400px;
+    height: 400px;
+    margin-left: 4px;
+    margin-top: 4px;
+    border: 1px solid rgb(0, 0, 0);
+}
+/* =========== 
+ARROWS 
+===========*/
+/* ARROW CONTAINER */
+.MainPage div div:nth-of-type(1)
+{
+    position: relative;
+    margin-top: 178px;
+    width: 30px;
+    font-weight: 900;
+    color: black 
+}
+/* left arrow */
+.MainPage div button
+{
+    position: absolute;
+    margin-top: 224px;
+    margin-left: -3px;
+    background-color: transparent;
+    font-size: 26px;
+    border: transparent;
+    padding-left: 10px;
+}
+/* right arrow */
+.MainPage button:nth-of-type(2)
+{
+    position: absolute;
+    margin-left: 22px;
+    background-color: transparent; 
+}
+/* arrow hover */
+.MainPage button:hover
+{
+    color: tomato;  
+    background-color: transparent;  
+}
+/* =========== 
+MAIN TEXT - about
+===========*/
+/* text container */
+.MainPage div:nth-child(5)
+{
+    margin-top: 5px;
+    margin-left: 68px;
+    width: 812px;
+}
+/* main text */
+.MainPage span p:first-of-type
+{
+    margin-left: 10px;
+    color: black;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 20px;
+}
+.MainPage span p:nth-child(2)
+{
+    margin-left: 56px;
+    color: black;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 20px;
+}
+.MainPage span p:nth-child(3)
+{
+    margin-left: 80px;
+    color: black;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 20px;
+}
+.MainPage span p:nth-child(4)
+{
+    margin-left: 100px;
+    color: black;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+}
+.MainPage span p:nth-child(5)
+{
+    margin-left: 120px;
+    color: black;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 20px;
+    margin-top: -17px;
+}
+.MainPage span p:nth-child(6)
+{
+    margin-left: 130px;
+    color: black;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-size: 20px;
+    margin-top: -18px;
+}
+/* DIV-PLAY HERE */
+.MainPage div:nth-child(7)
+{
+    background-color: #8ad05f;
+    width: 136px;
+    border-radius: 100%;
+    border: 5px solid rgb(0, 90, 128);
+    position: relative;
+    margin-top: -301px;
+    margin-left: 10px;
+}
+.MainPage div h2
+{
+    margin-left: 0;
+    margin-right: 0%;
+    margin-top: 23px;
+    font-size: 25px;
+    text-align: center;
+}
+.MainPage div h2:nth-child(2)
+{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: -27px;
+}

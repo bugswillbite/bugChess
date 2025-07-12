@@ -1,0 +1,125 @@
+/*
+Name= Media Queries
+Updated= 24.11.29 */
+
+/*
+=X-Small Screen < 576px
+============================================= */
+/* @media (min-width: 0) */
+@media (max-width: 575.98px)
+{
+    .pge-wrapper { padding: 0 100px 100px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 100px; } /* top-bottom left-rights */
+    .img-wrapper { flex: 0 0 50%}
+    div.bug-wrapper1 { width: 351px; }
+    .margin
+    {
+        top: 50px;
+        font-size: 15px; 
+        left: -55px;
+        background-color: rgb(133, 150, 189);
+        height: 53px;
+        padding-right: 110px;
+    }
+}
+/*
+=Small Screen ≥ 576px
+============================================= */
+@media (min-width: 576px)
+{
+    .pge-wrapper { padding: 0 20px 60px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 20px; } /* top-bottom left-rights */
+    .img-wrapper { flex: 0 0 33.3333%}
+    /* div.bug-wrapper1 { width: 580px; margin-left: 39px; } */
+    .margin
+    {
+        top: 56px;
+        font-size: 18px;
+        left: -2px;
+        background-color: rgb(133, 150, 189);
+        height: 57px;
+        padding-right: 191px;
+        width: 768px;
+    }
+}
+/*
+=Medium Screen ≥ 768px
+when screen reaches 768-991.8px apply these rules
+============================================= */
+@media (min-width: 768px)
+{
+    .pge-wrapper { padding: 0 60px 80px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 60px; } /* top-bottom left-rights */
+    /* .img-wrapper { flex: 0 0 25%} */
+    /* div.bug-wrapper1 { width: 721px; margin-left: 12px;} */
+    .margin 
+    { 
+        top: -2px;
+        font-size: 22px;
+        left: 9px;
+        background-color: transparent;
+        height: 57px;
+        padding-right: 191px;
+        width: 970px;   
+    }
+}
+/*
+=Large Screen ≥ 992px
+============================================= */
+@media (min-width: 992px)
+{
+    .pge-wrapper { padding: 0 100px 100px; } /* top left-right bototm*/
+    .inn-wrapper { padding: 0 100px; } /* top-bottom left-rights */
+    .img-wrapper { flex: 0 0 25%}
+    .bug-wrapper1 { width: 1098px; margin-left: 0; }
+    .margin ul {left: -70px;};
+    .margin
+    {
+        position: absolute;
+        top: -24px;
+        left: 591px;
+        width: 888px;
+        height: auto;
+        font-family: "WDXL Lubrifont TC", sans-serif;
+        font-size: 31px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        background-color: transparent;
+    }
+
+}
+@media (min-width: 1359px ) { .margin ul {left: -30px;}; }
+
+/* ========================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
